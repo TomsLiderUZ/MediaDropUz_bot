@@ -1,0 +1,45 @@
+MediaDropUzBot/
+├── public/
+│   └── welcome.js                      #/ Bu yerda bot ga start berilganda foydalauvchi bilan salomlashish  
+│
+├── src/ 
+│   ├── admin/
+│   │   ├── logn.html                   #/ localhost ga kirganda 1-shuni ko'rsatadi 
+│   │   ├── admin.html                  #/ login qilgandan keyin buni ko'rsatadai har 2 ta html fayldagi qisimda ham localhost da chiqib ketmoqchi bo'lsa confirm oynasida so'raydi, va admin.html da barcha userlar ro'yhati bo'ladi va userni role ni user yoki admin qilib taxrirlash imkoni bo'ladi <sellect> orqali
+│   │   ├── script.js                   #/ localhost bilan bog'liq JavaScript codlar saqlanadi
+│   │   ├── style.css                   #/ localhost bilan bog'liq CSS codlar saqlanadi
+│   │   └── server.js                   #/ serverga javob beradigan codlar saqlanadi
+│   │
+│   ├── upload/
+│   │   ├── media-upload/
+│   │   │   ├── load.js                 #/ Bu yerda media ni media-base ga yuklash bilan bog'liq codlar 
+│   │   │   ├── media.json              #/ Barcha medialar haqidagi malumotlar saqlanadi media id si va joylashgan manzil va video nomi
+│   │   │   └── send.js                 #/ Bu yerda bot videoni foydalanuvchiga yuborish bilan bog'liq codlar
+│   │   │    
+│   │   └── media-base/                 #/ Bu yerda botga yuklangan barcha media fayllar yuklanadai
+│   │
+│   ├── users-base/
+│   │   └── users.json                  #/ Bu yerda barcha user malumotlatri bor admin va odiy foydalanuvchilar type orqali ajratiladi va bu yerda foydalanuvchilarning qo'shilgan vaqti id nomi username va boshqa malumotlari saqlanadi
+│   │
+│   ├── commands.js                     #/ Bu yerda barcha commandalar ishga tushiriladi, 
+│   ├── buttons.js                      #/ Bu yerda barcha tugmaalar (pastgi menyudagi) ishga tushiriladi,
+│   └── about.js                        #/ Bu yerda bot haqidagi malumotlar bor /help dagandan ham malumotlar shu yerdan olinadi 
+│
+├── config.env                          #/ Bu yerda bot localhost yoki server port va telegram bot token ni shunga o'xshash narsalar saqlanadi
+└── index.js                            #/ Asossiy hammasini ishga tushirish
+
+
+
+Commandalar ro'yxati:
+
+/start  -  Bu botga start berish [hamma uchun ishlaydi]
+/login  -  Bu yerda login qilish uchun adminpanel linki taqdim qilinadi link: (ate-created-admin.railway.app) [hamma uchun ishlaydi]
+/help   -  Bunda bot haqida malumot beradi [hamma uchun ishlaydi]
+/load   -  Serverga media yuklamoqchi bo'lsa shuni yozadi va bot kerkli tushunchani aytadi va media yuklasa qabul qiladi [faqat admin uchun ishlaydi]
+
+
+Menyular ro'yxati:
+
+Kirish  -  Bu yerda login qilish uchun adminpanel linki taqdim qilinadi link: (ate-created-admin.railway.app) [hamma uchun ishlaydi]
+Yordam   -  Bunda bot haqida malumot beradi [hamma uchun ishlaydi]
+Media joylash   -  Serverga media yuklamoqchi bo'lsa shuni yozadi va bot kerkli tushunchani aytadi va media yuklasa qabul qiladi [faqat admin uchun ishlaydi]

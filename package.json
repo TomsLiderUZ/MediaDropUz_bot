@@ -1,0 +1,18 @@
+{
+  "name": "mediadropuzbot",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "ANITOKU EVOLUTION",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "node-telegram-bot-api": "^0.66.0"
+  }
+}

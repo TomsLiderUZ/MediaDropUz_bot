@@ -1,0 +1,26 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Env files
+.env
+
+# OS fayllari
+.DS_Store
+Thumbs.db
+
+# Bash history
+.bash_history
+
+# PM2 logs
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# VSCode konfiguratsiyasi
+.vscode/
