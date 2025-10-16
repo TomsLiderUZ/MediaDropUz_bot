@@ -26,8 +26,9 @@ app.post("/login", (req, res) => {
 });
 
 app.get("/admin", (req, res) => {
-  if (!isLoggedIn) return res.redirect("/");
-  res.sendFile(path.join(__dirname, "admin.html"));
+ // if (!isLoggedIn) return res.redirect("/");
+   res.sendFile(path.join(__dirname, "admin.html")
+  // );
 });
 
 app.get("/api/users", (req, res) => {
